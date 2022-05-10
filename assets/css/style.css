@@ -1,0 +1,91 @@
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #ffb300 !important;
+  --primary-hover: #ffa000;
+  --primary-focus: rgba(255, 179, 0, 0.125);
+  --primary-inverse: rgba(0, 0, 0, 0.75);
+}
+#services {
+    margin: 0 auto;
+}
+#services h3 {
+    margin: 5px 0;
+}
+#services img {
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+nav {
+    margin: 5px 15px;
+}
+.hero img{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.services-hero img {
+    height: 430px;
+    width: 800px;
+    border-radius: 35px;
+}
+.services-section {
+    justify-content: center;
+    text-align: center;
+
+}
+
+#booking-btn {
+    position:sticky;
+    top: 10px;
+    width: 300px;
+    margin-left: 15px;
+}
+.dogSlides-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.dogSlide img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+/* hide images by default */
+.dogslide {
+    display: none;
+}
+/* fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+    
+}
+footer div {
+    margin: 10px 15px;
+}
+dialog {
+    width: 1400px;
+}
+
+.reviewList {
+    font-size: 12px;
+}
+
+.column-1 {
+    width: 70%;
+}
+
+.column-2 {
+    width: 100%;
+}
+
+.hours {
+    text-align: right;
+}
