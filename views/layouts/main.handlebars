@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <title>Paradise Paw</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/paradise-paw/public/assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 
 
 
 <body>
-
 
     <nav>
         <ul>
@@ -23,105 +23,10 @@
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact us!</a></li>
             <li><a href="#" id="booking-btn" role="button" class="contrast" data-target="modal-example"
-                    onClick="toggleModal(event)">Book Now</a></li>
+                    onClick="toggleModal(event)">Login</a></li>
 
         </ul>
-    </nav>
-    <!-- modal start -->
-    <dialog id="modal-example">
-        <article>
-            <a href="#close" aria-label="Close" class="close" data-target="modal-example" onClick="toggleModal(event)">
-            </a>
-            <h3>Confirm your action!</h3>
-            <p>
-                All appoiments need to be confirmed by the owner. Appoinments are subject to change based on
-                availability and holiday hours!
-            </p>
-            <p>
-            <form>
-                <div class="grid">
-                    <!-- Column 1 -->
-                    <div>
-                        <!-- Markup example 1: input is inside label -->
-                        <label for="firstname">
-                            First name
-                            <input type="text" id="firstname" name="firstname" placeholder="First name" required>
-                        </label>
-
-                        <label for="dogbreed">
-                            Dog's breed
-                        </label>
-                        <select id="apibutton">
-                            <option value="" disabled selected>Select</option>
-                        </select>
-                        <label for="date">Date
-                            <input type="date" id="date" name="date">
-                        </label>
-                    </div>
-                    <!-- Column 2 -->
-                    <div>
-                        <label for="lastname">
-                            Last name
-                            <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
-                        </label>
-
-                        <label for="dog's name">
-                            Dog's name
-                            <input type="text" id="dogname" name="dogname" placeholder="Dog's name" required>
-                        </label>
-                        <label for="time">Time
-                            <input type="time" id="time" name="time">
-                        </label>
-                    </div>
-                    <!-- Column 3 -->
-                    <div>
-                        <label for="email">Email address</label>
-                        <input type="email" id="email" name="email" placeholder="Email address" required>
-
-                        <label for="dog's age">
-                            Dog's age
-                            <input type="number" id="dogage" name="dogage" placeholder="Dog's age" required>
-                        </label>
-                    </div>
-                </div>
-
-                <button type="submit">Submit</button>
-
-            </form>
-            </p>
-            <footer>
-                <a href="#cancel" role="button" class="secondary" data-target="modal-example"
-                    onClick="toggleModal(event)">
-                    Cancel
-                </a>
-                <a href="#confirm" role="button" data-target="modal-example" onClick="toggleModal(event)">
-                    Confirm
-                </a>
-            </footer>
-        </article>
-    </dialog>
-    <!-- Modal End -->
-
-    <!-- Main Page -->
-    <main class="container">
-        <div class="grid">
-            <!-- Column one -->
-            <div class="column-1">
-                <div class="hero">
-                    <img src="./assets/images/logo.jpg" alt="Paradise Paw logo">
-                </div>
-                <!-- reviews start -->
-                <div id="reviews">
-                    <h3>Check out our reviews!</h3>
-                    <!-- <ul>
-                    <li>5/5 stars</li>
-                    <li>10/10 highly recommend</li>
-                </ul> -->
-                </div>
-            </div>
-            <!-- reviews end -->
-
-            <!-- Column two -->
+   
             <!-- Slideshow container -->
             <div class="column-2">
                 <div class="dogSlides-container">
